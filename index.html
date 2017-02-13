@@ -12,25 +12,9 @@
 		<!-- <script src="https://use.fontawesome.com/06591f047d.js"></script> -->
 </head>
 <body>
-	<div class="left-column">
-		<div class="col-xs-12">
-			<button id="pickStudent" class="btn col-sm-4 col-sm-offset-1 col-xs-12 col-xs-offset-0" onclick="generateRan()">Pick a raffle ticket!</button>
-		</div>
-		<div class="col-xs-12">
-			<button id="startOver" class="btn col-sm-4 col-sm-offset-1 col-xs-12 col-xs-offset-0">Start Over</button>
-		</div>
-
-		<div class="form col-sm-4 col-sm-offset-1 col-xs-12, col-xs-offset-0 text-center">
-		  <input type="name" class="form-control col-xs-12" id="firstName" placeholder="First Name">
-		  <input type="name" class="form-control col-xs-12" id="lastName" placeholder="Last Name">
-		  <input type="number" class="form-control col-xs-12" id="addStickers" placeholder="Number of Stickers">
-		  <button id="updateStudentInfo" type="submit" class="btn col-xs-12">Update Student Info</button>
-		</div>
-	</div>
-
-	<ol reversed class="col-sm-4 text-center col-sm-offset-7 col-xs-10 col-xs-offset-1" id="ol">
-		<!-- append lis here -->
-	</ol>
+	<label for="numberInput">Enter a space separated list of numbers.</label>
+	<input type="text" id="numberInput" placeholder="Enter Numbers Here"/>
+	<div id="result"></div>
 
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
