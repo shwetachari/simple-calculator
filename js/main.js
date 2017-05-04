@@ -9,5 +9,6 @@ function multiply(array) {
 $("#multiply").click(multiply);
 
 function mean(array) {
-  
+
 }
+$("#mean").click(mean);
