@@ -12,3 +12,7 @@ function mean(array) {
 
 }
 $("#mean").click(mean);
+
+function min(array) {
+  
+}
