@@ -17,3 +17,7 @@ function min(array) {
 
 }
 $("#min").click(min);
+
+function max(array) {
+  
+}
