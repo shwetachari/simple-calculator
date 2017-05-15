@@ -19,5 +19,6 @@ function min(array) {
 $("#min").click(min);
 
 function max(array) {
-  
+
 }
+$("#max").click(max);
