@@ -24,5 +24,6 @@ function max(array) {
 $("#max").click(max);
 
 function range(array) {
-  
+
 }
+$("#range").click(range);
