@@ -3,7 +3,9 @@ function add(array) {
     return a + b;
   });
 }
-$("#add").click(add);
+$("#add").click(function() {
+  $("#result").html(add(array));
+});
 
 function multiply(array) {
 
