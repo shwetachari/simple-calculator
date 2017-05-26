@@ -10,7 +10,9 @@ $("#add").click(function() {
 function multiply(array) {
 
 }
-$("#multiply").click(multiply);
+$("#multiply").click(function() {
+  $("#result").html(multiply(array));
+});
 
 function mean(array) {
 
