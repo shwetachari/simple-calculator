@@ -17,7 +17,9 @@ $("#multiply").click(function() {
 function mean(array) {
 
 }
-$("#mean").click(mean);
+$("#mean").click(function() {
+  $("#result").html(mean(array));
+});
 
 function min(array) {
 
