@@ -24,7 +24,9 @@ $("#mean").click(function() {
 function min(array) {
 
 }
-$("#min").click(min);
+$("#min").click(function() {
+  $("#result").html(min(array));
+});
 
 function max(array) {
 
