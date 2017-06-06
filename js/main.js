@@ -31,7 +31,9 @@ $("#min").click(function() {
 function max(array) {
 
 }
-$("#max").click(max);
+$("#max").click(function() {
+  $("#result").html(max(array));
+});
 
 function range(array) {
 
