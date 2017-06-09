@@ -38,4 +38,6 @@ $("#max").click(function() {
 function range(array) {
 
 }
-$("#range").click(range);
+$("#range").click(function() {
+  $("#result").html(multiply(range));
+});
