@@ -17,7 +17,7 @@ $("#multiply").click(function() {
 });
 
 function mean(array) {
-
+  return add(array) / array.length;
 }
 $("#mean").click(function() {
   $("#result").html(mean(array));
