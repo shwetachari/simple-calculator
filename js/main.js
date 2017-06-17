@@ -24,7 +24,9 @@ $("#mean").click(function() {
 });
 
 function min(array) {
-
+  return array.reduce(function(min, num) {
+    return Math.min(min, num);
+  });
 }
 $("#min").click(function() {
   $("#result").html(min(array));
