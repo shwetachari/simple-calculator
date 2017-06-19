@@ -33,7 +33,9 @@ $("#min").click(function() {
 });
 
 function max(array) {
-
+  return array.reduce(function(min, num) {
+    return Math.max(min, num);
+  });
 }
 $("#max").click(function() {
   $("#result").html(max(array));
