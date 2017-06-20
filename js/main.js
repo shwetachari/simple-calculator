@@ -42,7 +42,7 @@ $("#max").click(function() {
 });
 
 function range(array) {
-
+ return Math.abs(max(array)) - Math.abs(min(array));
 }
 $("#range").click(function() {
   $("#result").html(multiply(range));
