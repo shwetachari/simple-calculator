@@ -1,3 +1,10 @@
+function convertInputToArray(input) {
+  var validInput = /[\d\s]+$/.test(input);
+  if(!validInput) {
+    alert('Invalid input!');
+  }
+}
+
 function add(array) {
   return array.reduce(function(a, b) {
     return a + b;
