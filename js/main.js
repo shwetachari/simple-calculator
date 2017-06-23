@@ -2,6 +2,7 @@ function convertInputToArray(input) {
   var validInput = /[\d\s]+$/.test(input);
   if(!validInput) {
     alert('Invalid input!');
+    return;
   }
 }
 
