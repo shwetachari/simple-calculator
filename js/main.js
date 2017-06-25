@@ -1,9 +1,10 @@
 function convertInputToArray(input) {
-  var validInput = /[\d\s]+$/.test(input);
+  var validInput = /[\d\s*]+$/.test(input);
   if(!validInput) {
     alert('Invalid input!');
     return;
   }
+  return input.replace(/\s+/g, ' ').split(' ');
 }
 
 function add(array) {
