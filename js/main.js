@@ -1,5 +1,7 @@
+var inputString;
+
 $(".btn").click(function() {
-  
+  inputString = $("#numberInput").val();
 });
 
 function convertInputToArray(input) {
