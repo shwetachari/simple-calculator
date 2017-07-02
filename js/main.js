@@ -11,7 +11,7 @@ function convertInputToArray(input) {
     alert('Invalid input!');
     return;
   }
-  return input.replace(/\s+/g, ' ').split(' ');
+  return input.replace(/\s+/g, ' ').split(' ').map(function(item) { return Number(item); });
 }
 
 function add(array) {
@@ -20,7 +20,7 @@ function add(array) {
   });
 }
 $("#add").click(function() {
-  $("#result").html(add(array));
+  $("#result").html(add(inputArray));
 });
 
 function multiply(array) {
@@ -29,14 +29,14 @@ function multiply(array) {
  });
 }
 $("#multiply").click(function() {
-  $("#result").html(multiply(array));
+  $("#result").html(multiply(inputArray));
 });
 
 function mean(array) {
   return add(array) / array.length;
 }
 $("#mean").click(function() {
-  $("#result").html(mean(array));
+  $("#result").html(mean(inputArray));
 });
 
 function min(array) {
@@ -45,7 +45,7 @@ function min(array) {
   });
 }
 $("#min").click(function() {
-  $("#result").html(min(array));
+  $("#result").html(min(inputArray));
 });
 
 function max(array) {
