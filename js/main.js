@@ -54,12 +54,12 @@ function max(array) {
   });
 }
 $("#max").click(function() {
-  $("#result").html(max(array));
+  $("#result").html(max(inputArray));
 });
 
 function range(array) {
  return Math.abs(max(array)) - Math.abs(min(array));
 }
 $("#range").click(function() {
-  $("#result").html(multiply(range));
+  $("#result").html(range(inputArray));
 });
