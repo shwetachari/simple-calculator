@@ -1,7 +1,7 @@
 var inputArray;
 
 $(".btn").click(function() {
-  var inputString = $("#numberInput").val();
+  var inputString = $("#numberInput").val().replace(/\s+/g, ' ');
   inputArray = convertInputToArray(inputString);
 });
 
@@ -11,7 +11,7 @@ function convertInputToArray(input) {
     alert('Invalid input!');
     return;
   }
-  return input.replace(/\s+/g, ' ').split(' ').map(function(item) { return Number(item); });
+  return input.split(' ').map(function(item) { return Number(item); });
 }
 
 // Math functions

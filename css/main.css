@@ -1,7 +1,15 @@
 label {
+  margin-top:50px;
   font-weight:normal;
   font-size:25px;
 }
 input {
   padding:10px;
+}
+#result {
+  font-size:50px;
+  padding:30px;
+}
+.btn {
+  padding: 10px;
 }
