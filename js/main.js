@@ -42,7 +42,7 @@ function addStudentOrStickers(firstName, lastName, addStickers) {
     studentArray.push(renderStudentObject(firstName, lastName, addStickers));
   } else {
     studentArray.forEach(function(student) {
-      if(student[firstName] === firstName && student[lastName] === lastName) {
+      if(student['firstName'] === firstName && student['lastName'] === lastName) {
         student.stickers += addStickers;
       }
     });
