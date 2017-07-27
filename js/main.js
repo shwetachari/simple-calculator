@@ -47,6 +47,7 @@ function addStudentOrStickers(firstName, lastName, addStickers) {
       }
     });
   }
+  refreshRaffleArray();
 }
 
 function clickToAddStudentInfo() {
@@ -93,6 +94,5 @@ function generateRan() {
 }
 
 $("#updateStudentInfo").click(clickToAddStudentInfo);
-$("#updateStudentInfo").click(refreshRaffleArray)
 $(document).ready(refreshRaffleArray);
 $("#startOver").click(refreshRaffleArray)
