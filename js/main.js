@@ -21,7 +21,7 @@ function renderStudentObject(firstName, lastName, stickers) {
     lastName : lastName,
     stickers: stickers,
     raffleName : firstName + ' ' + lastName[0] + '.',
-  }
+  };
 }
 
 function modifyCase(str) {
@@ -95,4 +95,4 @@ function generateRan() {
 
 $("#updateStudentInfo").click(clickToAddStudentInfo);
 $(document).ready(refreshRaffleArray);
-$("#startOver").click(refreshRaffleArray)
+$("#startOver").click(refreshRaffleArray);
