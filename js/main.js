@@ -29,10 +29,8 @@ function modifyCase(str) {
 
 function studentExists(firstName, lastName) {
   return studentArray.reduce(function(exists, student) {
-    if (exists === true) {
-      return true;
-    }
-    return student[firstName] === firstName && student[lastName] === lastName;
+    exists = exists ? true : student['firstName'] === firstName && student['lastName'] === lastName;
+    return exists;
   }, false);
 }
 
@@ -81,7 +79,6 @@ function refreshRaffleArray() {
   $("ol").html('');
 }
 
-
 function generateRan() {
   if(raffleArray.length === 0) {
     alert('No more names to display!');
@@ -95,7 +92,7 @@ function generateRan() {
   $(li).addClass("text-center");
 }
 
-
 $("#updateStudentInfo").click(clickToAddStudentInfo);
+$("#updateStudentInfo").click(refreshRaffleArray)
 $(document).ready(refreshRaffleArray);
 $("#startOver").click(refreshRaffleArray)
