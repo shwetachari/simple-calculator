@@ -1,4 +1,5 @@
 var studentArray = [
+  // sample data
   {
     firstName : 'Charles',
     lastName : 'Darwin',
@@ -29,8 +30,7 @@ function modifyCase(str) {
 
 function studentExists(firstName, lastName) {
   return studentArray.reduce(function(exists, student) {
-    exists = exists ? true : student['firstName'] === firstName && student['lastName'] === lastName;
-    return exists;
+    return exists ? true : student['firstName'] === firstName && student['lastName'] === lastName;
   }, false);
 }
 
