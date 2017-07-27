@@ -1,4 +1,9 @@
 html {
+}
+body{
+  height:100%;
+  width:100%;
+  margin:0;
   background-image: url('../img/bg5.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -7,34 +12,49 @@ html {
   background-color: rgb(77, 72, 66);
   overflow-y: scroll;
 }
-body{
-  width:100%;
-  margin:0;
+.left-column {
+  position:fixed;
+}
+.form {
+  margin-top: 100px;
+}
+.form input {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size:20px !important;
+  padding: 25px !important;
+  margin-bottom:10px;
+  color: rgb(137, 172, 140);
 }
 .btn {
-  margin-top:20%;
-  padding:20px;
-  position:fixed;
-  font-size:30px;
-  border-radius:5px;
+  border-radius:10px;
   font-family: 'Julius Sans One', sans-serif;
-  border-color: rgb(137, 172, 140);
-  border-width:2px;
-  border-style:solid;
+  border: 2px solid rgb(137, 172, 140);
   background-color: white;
   outline:none;
   color:rgb(137, 172, 140);
+  text-overflow: ellipsis;
 }
-.btn:hover, .btn:active, .btn::before, .btn::after, .btn::selection, .btn:checked, .btn:default, .btn:disabled {
+#updateStudentInfo {
+  margin-top:10px;
+  padding:20px;
+  font-size:20px;
+}
+#pickStudent, #startOver {
+  margin-top:30px;
+  padding:20px;
+  font-size:30px;
+}
+.btn:hover, .btn:active, .btn::selection, .btn:checked, .btn:default, .btn:disabled {
   font-weight:bold;
-  color:rgb(137, 172, 140);
 }
 ol {
-  margin: 5% auto 0;
+  position:absolute !important;
+  margin-top:30px;
+  margin-bottom:30px;
 }
 li {
-  margin: 10px auto 0;
   padding: 30px 10px;
+  margin-bottom:20px;
   background-image: url('../img/raffleticket.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -42,4 +62,28 @@ li {
   font-size:40px;
   font-family: 'Indie Flower', cursive;
   color:white;
+}
+
+@media (max-width: 770px) {
+  .left-column {
+    position:relative !important;
+  }
+  ol {
+    position:relative !important;
+  }
+  #pickStudent {
+    margin-top:0px;
+  }
+  #pickStudent, #startOver {
+    font-size:25px !important;
+  }
+  #startOver {
+    margin-bottom:50px;
+  }
+}
+
+@media (max-width:1030px) {
+  #pickStudent, #startOver {
+    font-size:18px;
+  }
 }
